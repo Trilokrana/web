@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const page = () => {
   const [toggle, setToggle] = useState("full_screen");
