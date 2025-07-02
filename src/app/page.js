@@ -93,7 +93,7 @@ const Page = () => {
           >
             <div className="h-full overflow-hidden ">
               <Card className="h-full flex flex-col overflow-hidden border-0 transition-all duration-500 ease-in-out">
-                <CardHeader className="flex  justify-between">
+                <CardHeader className="flex item-center justify-between">
                   <h3 className="text-lg font-medium">Companies List</h3>
                   <Button
                     variant="ghost"
