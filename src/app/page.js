@@ -1,5 +1,5 @@
 "use client";
-import { useState, useCallback, memo } from "react";
+import { useState } from "react";
 import {
   ResizableHandle,
   ResizablePanel,
@@ -85,7 +85,12 @@ const Page = () => {
         )}
 
         {isRightPanelVisible && (
-          <ResizablePanel defaultSize={50}>
+          <ResizablePanel
+            defaultSize={50}
+            className={`transition-all duration-500 ease-in-out ${
+              isRightPanelVisible ? "animate-slide-right" : "animate-slide-left"
+            }`}
+          >
             <div className="h-full overflow-hidden ">
               <Card className="h-full flex flex-col overflow-hidden border-0 transition-all duration-500 ease-in-out">
                 <CardHeader className="flex  justify-between">
