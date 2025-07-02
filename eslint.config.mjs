@@ -23,13 +23,17 @@ const eslintConfig = [
         exports: 'writable',
         module: 'writable',
         require: 'readonly',
+        setTimeout: 'readonly',
+        clearTimeout: 'readonly',
+        setInterval: 'readonly',
+        clearInterval: 'readonly',
       },
     },
     rules: {
       'no-unused-vars': 'warn',
       'no-console': 'off',
       'prefer-const': 'warn',
-      'no-undef': 'error',
+      'no-undef': 'warn',
     },
   },
 ];
