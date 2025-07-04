@@ -65,8 +65,8 @@ export const columns = [
   {
     accessorKey: "investorName",
     header: ({ column }) => (
-      <div className="flex flex-row justify-between">
-        <div>Investor Name</div>
+      <div className="flex flex-row justify-between items-center">
+        <div className="flex items-center">Investor Name</div>
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
@@ -76,7 +76,7 @@ export const columns = [
       </div>
     ),
     cell: ({ row }) => (
-      <div className="flex flex-row">
+      <div className="flex flex-row items-center">
         <Image
           src={row.original.icon}
           alt="icons"
@@ -93,7 +93,7 @@ export const columns = [
     header: ({ column }) => {
       return (
         <div className="flex flex-row justify-between">
-          <div>Type</div>
+          <div className="flex items-center">Type</div>
           <Button
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
@@ -110,7 +110,7 @@ export const columns = [
     header: ({ column }) => {
       return (
         <div className="flex flex-row justify-between">
-          <div>Asset Class</div>
+          <div className="flex items-center">Asset Class</div>
           <Button
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
@@ -129,7 +129,7 @@ export const columns = [
     header: ({ column }) => {
       return (
         <div className="flex flex-row justify-between">
-          <div>Strategy</div>
+          <div className="flex items-center">Strategy</div>
           <Button
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
@@ -148,7 +148,7 @@ export const columns = [
     header: ({ column }) => {
       return (
         <div className="flex flex-row justify-between">
-          <div>Country</div>
+          <div className="flex items-center">Country</div>
           <Button
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
@@ -167,7 +167,7 @@ export const columns = [
     header: ({ column }) => {
       return (
         <div className="flex flex-row justify-between">
-          <div>City</div>
+          <div className="flex items-center">City</div>
           <Button
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
@@ -184,7 +184,7 @@ export const columns = [
     header: ({ column }) => {
       return (
         <div className="flex flex-row justify-between">
-          <div>Founded</div>
+          <div className="flex items-center">Founded</div>
           <Button
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
