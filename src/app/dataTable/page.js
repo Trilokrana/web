@@ -9,7 +9,7 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ArrowDownUp } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -28,14 +28,14 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-
 import { data } from "./../data";
+import Image from "next/image";
 
 export const columns = [
   {
     id: "select",
     header: ({ table }) => (
-      <div>
+      <div className="flex items-center">
         <Checkbox
           checked={
             table.getIsAllPageRowsSelected() ||
@@ -64,54 +64,136 @@ export const columns = [
 
   {
     accessorKey: "investorName",
-    header: "Inverstor Name",
+    header: ({ column }) => (
+      <div className="flex flex-row justify-between">
+        <div>Investor Name</div>
+        <Button
+          variant="ghost"
+          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        >
+          <ArrowDownUp className="h-5 w-5" />
+        </Button>
+      </div>
+    ),
     cell: ({ row }) => (
-      <div className="capitalize">{row.getValue("investorName")}</div>
+      <div className="flex flex-row">
+        <Image
+          src={row.original.icon}
+          alt="icons"
+          width={28}
+          height={28}
+          className="rounded-lg mx-3"
+        />
+        <div className="capitalize">{row.getValue("investorName")}</div>
+      </div>
     ),
   },
   {
     accessorKey: "type",
     header: ({ column }) => {
       return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-        >
-          Type
-        </Button>
+        <div className="flex flex-row justify-between">
+          <div>Type</div>
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          >
+            <ArrowDownUp className="h-5 w-5" />
+          </Button>
+        </div>
       );
     },
     cell: ({ row }) => <div className="capitalize">{row.getValue("type")}</div>,
   },
   {
     accessorKey: "asset",
-    header: () => <div>Asset Class</div>,
+    header: ({ column }) => {
+      return (
+        <div className="flex flex-row justify-between">
+          <div>Asset Class</div>
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          >
+            <ArrowDownUp className="h-5 w-5" />
+          </Button>
+        </div>
+      );
+    },
     cell: ({ row }) => (
       <div className="capitalize">{row.getValue("asset")}</div>
     ),
   },
   {
     accessorKey: "strategy",
-    header: "Strategy ",
+    header: ({ column }) => {
+      return (
+        <div className="flex flex-row justify-between">
+          <div>Strategy</div>
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          >
+            <ArrowDownUp className="h-5 w-5" />
+          </Button>
+        </div>
+      );
+    },
     cell: ({ row }) => (
       <div className="capitalize">{row.getValue("strategy")}</div>
     ),
   },
   {
     accessorKey: "country",
-    header: "Country",
+    header: ({ column }) => {
+      return (
+        <div className="flex flex-row justify-between">
+          <div>Country</div>
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          >
+            <ArrowDownUp className="h-5 w-5" />
+          </Button>
+        </div>
+      );
+    },
     cell: ({ row }) => (
       <div className="capitalize">{row.getValue("country")}</div>
     ),
   },
   {
     accessorKey: "city",
-    header: "City",
+    header: ({ column }) => {
+      return (
+        <div className="flex flex-row justify-between">
+          <div>City</div>
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          >
+            <ArrowDownUp className="h-5 w-5" />
+          </Button>
+        </div>
+      );
+    },
     cell: ({ row }) => <div className="capitalize">{row.getValue("city")}</div>,
   },
   {
     accessorKey: "founded",
-    header: "Founded",
+    header: ({ column }) => {
+      return (
+        <div className="flex flex-row justify-between">
+          <div>Founded</div>
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          >
+            <ArrowDownUp className="h-5 w-5" />
+          </Button>
+        </div>
+      );
+    },
     cell: ({ row }) => (
       <div className="capitalize">{row.getValue("founded")}</div>
     ),

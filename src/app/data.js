@@ -8,6 +8,7 @@ export const data = [
     country: "Germany",
     city: "Munich",
     founded: 2012,
+    icon: "https://dummyimage.com/32x32/3498db/fff&text=E",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const data = [
     country: "Germany",
     city: "Berlin",
     founded: 2000,
+    icon: "https://dummyimage.com/32x32/e74c3c/fff&text=C",
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ export const data = [
     country: "Germany",
     city: "Berlin",
     founded: 2050,
+    icon: "https://dummyimage.com/32x32/2ecc71/fff&text=E",
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ export const data = [
     country: "Germany",
     city: "Karlsruhe",
     founded: 2002,
+    icon: "https://dummyimage.com/32x32/9b59b6/fff&text=L",
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ export const data = [
     country: "Netherlands",
     city: "The Hague",
     founded: 2003,
+    icon: "https://dummyimage.com/32x32/f1c40f/000&text=M",
   },
   {
     id: 6,
@@ -58,6 +63,7 @@ export const data = [
     country: "Germany",
     city: "Frankfurt Am Main",
     founded: 1965,
+    icon: "https://dummyimage.com/32x32/1abc9c/fff&text=D",
   },
   {
     id: 7,
@@ -68,6 +74,7 @@ export const data = [
     country: "Germany",
     city: "Munich",
     founded: 2007,
+    icon: "https://dummyimage.com/32x32/e67e22/fff&text=D",
   },
   {
     id: 8,
@@ -78,6 +85,7 @@ export const data = [
     country: "Italy",
     city: "Milano",
     founded: 2000,
+    icon: "https://dummyimage.com/32x32/34495e/fff&text=W",
   },
   {
     id: 9,
@@ -88,6 +96,7 @@ export const data = [
     country: "Spain",
     city: "Barcelona",
     founded: 2008,
+    icon: "https://dummyimage.com/32x32/16a085/fff&text=M",
   },
   {
     id: 10,
@@ -98,6 +107,7 @@ export const data = [
     country: "Luxembourg",
     city: "Strassen",
     founded: 1446,
+    icon: "https://dummyimage.com/32x32/8e44ad/fff&text=X",
   },
   {
     id: 11,
@@ -108,6 +118,7 @@ export const data = [
     country: "Italy",
     city: "Milano",
     founded: 1997,
+    icon: "https://dummyimage.com/32x32/d35400/fff&text=A",
   },
   {
     id: 12,
@@ -118,5 +129,6 @@ export const data = [
     country: "United Kingdom",
     city: "London",
     founded: 1990,
+    icon: "https://dummyimage.com/32x32/27ae60/fff&text=I",
   },
 ];
