@@ -9,7 +9,7 @@ export default function Component() {
         <div className="">
             <Card className="max-w-4xl mx-auto min-h-screen border-2 border-black my-20 rounded-xl">
                 <CardHeader className="pb-4">
-                    <div className="flex items-center justify-between not-first-of-type:mx-4">
+                    <div className="flex items-center justify-between mx-4">
                         <h1 className="text-2xl font-bold text-gray-900 ">
                             Company Profile
                         </h1>
@@ -33,7 +33,7 @@ export default function Component() {
                         </div>
                     </div>
 
-                    <div className="flex items-center gap-4 mt-4">
+                    <div className="flex items-center gap-4 mt-4 mx-4">
                         <div className="w-22 h-15 bg-teal-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
                             Logo
                         </div>
